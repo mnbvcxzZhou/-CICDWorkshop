@@ -31,7 +31,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags:  mnbvcxzzhou/cicdworkshop:latest
+        tags: mnbvcxzzhou/cicdworkshop:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
